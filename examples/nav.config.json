@@ -1,0 +1,33 @@
+{
+  "开发指南": [
+    {
+      "name": "index",
+      "path": "/",
+      "type": "pages"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "基础组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "Button 按钮",
+          "name": "button",
+          "path": "/button"
+        }
+      ]
+    },
+    {
+      "desc": "视图组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "Toast 提示",
+          "name": "toast",
+          "path": "/toast"
+        }
+      ]
+    }
+  ]
+}
