@@ -17,10 +17,10 @@ const addComponent = (router) => {
       routes = routes.concat(route.items);
     } else {
       if (route.type === 'pages') {
-        route.component = r => require.ensure([], () => r(require(`./pages/${route.name}.vue`)));
+        route.component = require(`./pages/${route.name}.vue`).default;
         return;
       }
-      route.component = r => require.ensure([], () => r(require(`./docs/${route.name}.md`)));
+      route.component = require(`./docs/${route.name}.md`).default;
     }
   });
 };

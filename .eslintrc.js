@@ -47,6 +47,7 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-param-reassign': 0,
-    'no-unused-vars': 0
+    'no-unused-vars': 0,
+    'import/no-dynamic-require': 0
   }
 }
