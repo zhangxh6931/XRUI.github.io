@@ -63,12 +63,12 @@ export default {
 </xr-modal>
 
 <div>
-<xr-button @click="customModal1Show = true" type="primary">custom modal</xr-button>
+<xr-button @click="customModal2Show = true" type="primary">custom modal</xr-button>
 </div>
 
 ::: demo
 ```html
-<xr-modal v-model="customModal1Show" :enableFooter="false">
+<xr-modal v-model="customModal2Show" :enableFooter="false">
   <center>
     <p>1、以热爱祖国为荣　以危害祖国为耻</p>
     <p>2、以服务人民为荣　以背离人民为耻</p>
