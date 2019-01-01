@@ -1,9 +1,8 @@
 {
   "开发指南": [
     {
-      "name": "index",
-      "path": "/",
-      "type": "pages"
+      "name": "button",
+      "path": "/"
     }
   ],
   "组件": [
@@ -26,6 +25,11 @@
           "desc": "Toast 提示",
           "name": "toast",
           "path": "/toast"
+        },
+        {
+          "desc": "Modal",
+          "name": "modal",
+          "path": "/modal"
         }
       ]
     }

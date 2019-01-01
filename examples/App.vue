@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       init: false,
-      isIndex: true,
+      isIndex: false,
     };
   },
   watch: {

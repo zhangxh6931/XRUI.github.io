@@ -14,12 +14,12 @@
               <slot name="footer"></slot>
             </template>
             <template v-else>
-              <button type="button" class="btn btn-secondary" @click="$emit('input', false)">{{cancelBtnText}}</button>
+              <xr-button size="large" @click="$emit('input', false)">{{cancelBtnText}}</xr-button>
               <template v-if="$slots.primaryBtn">
                 <slot name="primaryBtn"></slot>
               </template>
               <template v-else>
-                <button type="button" class="btn btn-primary" @click="handleConfirm">{{confirmBtnText}}</button>
+                <xr-button size="large" type="primary" @click="handleConfirm">{{confirmBtnText}}</xr-button>
               </template>
             </template>
           </div>
@@ -185,16 +185,17 @@ export default {
     padding: @modal-inner-padding;
   }
 
-  .modal-footer(@modal-has-footer) {
+  .modal-footer {
     display: flex;
 
-    .btn {
+    button {
       display: block;
       flex: 1;
       padding: 9px;
       border: none;
       border-radius: 0;
       font-size: 18px;
+      box-shadow: none;
 
       &:first-child {
         border-bottom-left-radius: @modal-border-radius;
@@ -205,14 +206,6 @@ export default {
       }
     }
 
-    .btn-secondary {
-      background: #666;
-      color: #fff;
-    }
-
-    .btn-primary {
-      background: #42a8d3;
-    }
   }
 
   .modal-backdrop {

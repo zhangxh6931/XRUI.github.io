@@ -15,7 +15,9 @@ const env = require('../config/prod.env')
 
 const webpackConfig = merge(baseWebpackConfig, {
   entry: {
-    index: './examples/main.js'
+    xrui: './src/index.js',
+    '/toast/index': './packages/toast',
+    '/button/index': './packages/button'
   },
   module: {
     rules: utils.styleLoaders({
@@ -26,10 +28,14 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
-    path: config.build.assetsRoot,
+    path: path.resolve(__dirname, '../lib'),
     filename: utils.assetsPath('[name].js'),
     // chunkFilename: utils.assetsPath('js/[id].js'),
-
+    libraryTarget: 'commonjs2',
+    library: 'xrui'
+  },
+  externals: {
+    vue: 'Vue'
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
