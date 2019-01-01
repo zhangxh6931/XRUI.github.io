@@ -32,6 +32,7 @@ export default {
 
 ### 自定义footer 单按钮
 <xr-modal v-model="customModal1Show">
+  <center>hello, world</center>
   <template slot="footer">
     <xr-button size="large" type="primary">确定</xr-button>
   </template>
@@ -52,7 +53,7 @@ export default {
 :::
 
 ### 无footer
-<xr-modal v-model="customModal1Show" :enableFooter="false">
+<xr-modal v-model="customModal2Show" :enableFooter="false">
   <center>
     <p>1、以热爱祖国为荣　以危害祖国为耻</p>
     <p>2、以服务人民为荣　以背离人民为耻</p>
