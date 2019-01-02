@@ -1,4 +1,4 @@
-# xruinew
+# xrui
 
 > vue component for xingren ui
 
